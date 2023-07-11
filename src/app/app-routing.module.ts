@@ -6,7 +6,8 @@ import { PageMyPlantsComponent } from './pages/page-my-plants/page-my-plants.com
 import { PageAdminComponent } from './pages/page-admin/page-admin.component';
 
 const routes: Routes = [
-  { path: '', component: PageHomeComponent },
+  { path: '', redirectTo: 'home', pathMatch: 'full'},
+  { path: 'home', component: PageHomeComponent },
   { path: 'my-plants', component: PageMyPlantsComponent },
   { path: 'admin', component: PageAdminComponent },
 ];
