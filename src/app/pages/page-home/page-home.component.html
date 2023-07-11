@@ -1,1 +1,8 @@
-<p>page-home works!</p>
+<div class="container">
+  <h1 class="title">Plantdex</h1>
+  <div class="container-plants">
+    <ul>
+      <li *ngFor="let plant of plantsToDisplay">{{ plant.nom }}</li>
+    </ul>
+  </div>
+</div>
