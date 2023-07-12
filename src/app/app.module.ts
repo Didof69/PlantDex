@@ -9,6 +9,7 @@ import { PageHomeComponent } from './pages/page-home/page-home.component';
 import { PageMyPlantsComponent } from './pages/page-my-plants/page-my-plants.component';
 import { PageAdminComponent } from './pages/page-admin/page-admin.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
+import { PlantListComponent } from './components/plant-list/plant-list.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.com
     PageHomeComponent,
     PageMyPlantsComponent,
     PageAdminComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    PlantListComponent
   ],
 
   imports: [
