@@ -10,21 +10,21 @@ import { take } from 'rxjs';
 })
 export class PageHomeComponent implements OnInit {
   plantsToDisplay: Plant[] = [];
+  tabCategorie: string[] = [];
+
   constructor(private plantService: PlantService) {}
 
   ngOnInit() {
     this.plantService.getPlants().subscribe((plants) => {
       this.plantsToDisplay = plants;
       // console.log(this.plantsToDisplay);
-      this.recupererCategories();
-    });
-  }
 
-  recupererCategories():string[] {
-    let tabCategorie = [
-      ...new Set(this.plantsToDisplay.map((tabCat) => tabCat.categorie)),
-    ];
-    console.log(tabCategorie);
-    return tabCategorie
+      this.tabCategorie = [
+        ...new Set(
+          this.plantsToDisplay.map((tabCategories) => tabCategories.categorie)
+        ),
+      ];
+      console.log(this.tabCategorie);
+    });
   }
 }
