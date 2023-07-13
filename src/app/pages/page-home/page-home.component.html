@@ -1,6 +1,10 @@
-<div class="container">
+<div class="container mt-3">
   <h1 class="title">Super Natural Crops and Flowers</h1>
-
-  <app-plant-list [plants]="plantsToDisplay"></app-plant-list>
+  
+  <div class="container-components mt-3">
+    <app-filter-bar class="pt-2" [tabCategorie]="recupererCategories()"></app-filter-bar>
+    <app-plant-list [plants]="plantsToDisplay"></app-plant-list>
+  </div>
+  
 
 </div>

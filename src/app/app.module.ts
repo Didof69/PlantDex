@@ -11,6 +11,7 @@ import { PageAdminComponent } from './pages/page-admin/page-admin.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 import { PlantListComponent } from './components/plant-list/plant-list.component';
 import { CardComponent } from './components/card/card.component';
+import { FilterBarComponent } from './components/filter-bar/filter-bar.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { CardComponent } from './components/card/card.component';
     PageAdminComponent,
     PageNotFoundComponent,
     PlantListComponent,
-    CardComponent
+    CardComponent,
+    FilterBarComponent
   ],
 
   imports: [

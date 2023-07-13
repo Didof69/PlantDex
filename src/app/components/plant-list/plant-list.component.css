@@ -1,0 +1,4 @@
+.container-plants{
+    display: flex;
+    flex-wrap: wrap;
+}
