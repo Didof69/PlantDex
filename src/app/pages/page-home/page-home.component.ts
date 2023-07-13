@@ -10,17 +10,17 @@ import { take } from 'rxjs';
 })
 export class PageHomeComponent implements OnInit {
   plantsToDisplay: Plant[] = [];
-  constructor(private plantService: PlantService) { }
+  constructor(private plantService: PlantService) {}
 
   ngOnInit() {
     this.plantService.getPlants().subscribe((plants) => {
       this.plantsToDisplay = plants;
       console.log(this.plantsToDisplay);
-      this.recupererCategories()
+      this.recupererCategories();
     });
   }
 
-  recupererCategories():string[] {
+  recupererCategories(): string[] {
     let tabCategorie: string[] = [];
     for (const plant of this.plantsToDisplay) {
       tabCategorie.push(plant.categorie);
@@ -41,9 +41,8 @@ export class PageHomeComponent implements OnInit {
     console.log(tableauSansDoublons);
     let tabCategorieUnique = tableauSansDoublons.map((objet) => objet.valeur);
 
-    return tabCategorieUnique
+    return tabCategorieUnique;
   }
 }
-
 
 
