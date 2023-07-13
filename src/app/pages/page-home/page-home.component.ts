@@ -15,34 +15,16 @@ export class PageHomeComponent implements OnInit {
   ngOnInit() {
     this.plantService.getPlants().subscribe((plants) => {
       this.plantsToDisplay = plants;
-      console.log(this.plantsToDisplay);
+      // console.log(this.plantsToDisplay);
       this.recupererCategories();
     });
   }
 
-  recupererCategories(): string[] {
-    let tabCategorie: string[] = [];
-    for (const plant of this.plantsToDisplay) {
-      tabCategorie.push(plant.categorie);
-    }
+  recupererCategories():string[] {
+    let tabCategorie = [
+      ...new Set(this.plantsToDisplay.map((tabCat) => tabCat.categorie)),
+    ];
     console.log(tabCategorie);
-
-    let tableauAvecIndices = tabCategorie.map((valeur, index) => {
-      return { valeur: valeur, index: index };
-    });
-    console.log(tableauAvecIndices);
-
-    let tableauSansDoublons = tableauAvecIndices.filter((objet, index) => {
-      return (
-        tableauAvecIndices.findIndex((item) => item.valeur === objet.valeur) ===
-        index
-      );
-    });
-    console.log(tableauSansDoublons);
-    let tabCategorieUnique = tableauSansDoublons.map((objet) => objet.valeur);
-
-    return tabCategorieUnique;
+    return tabCategorie
   }
 }
-
-
