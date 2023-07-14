@@ -47,15 +47,11 @@ export class PageHomeComponent implements OnInit {
         this.plantsToDisplayFilter = this.plantsToDisplay;
       } else {
         for (let i = 0; i < filtreCategorie.length; i++) {
-        this.plantsToDisplayFilter =
-          this.plantsToDisplay.filter((e) =>
-            e.categorie.includes(filtreCategorie[i])
-            );
-        console.log('dans le for', this.plantsToDisplayFilter);
-      }
-      }
-      
-
+        this.plantsToDisplayFilter = this.plantsToDisplay.filter((e) =>
+          filtreCategorie.includes(e.categorie)
+        );
+        }
+    }
     console.log('ceci est tabfliter', this.plantsToDisplayFilter);
     console.log('ceci est le filtre', filtreCategorie);
   }
