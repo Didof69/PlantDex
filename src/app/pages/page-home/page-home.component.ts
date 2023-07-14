@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { PlantService } from '../../services/plant.service';
 import { Plant } from 'src/app/models/plant';
-import { take } from 'rxjs';
 
 @Component({
   selector: 'app-page-home',
@@ -11,6 +10,7 @@ import { take } from 'rxjs';
 export class PageHomeComponent implements OnInit {
   plantsToDisplay: Plant[] = [];
   tabCategorie: string[] = [];
+  plantsToDisplayFilter: Plant[] = [];
 
   constructor(private plantService: PlantService) {}
 
@@ -18,13 +18,45 @@ export class PageHomeComponent implements OnInit {
     this.plantService.getPlants().subscribe((plants) => {
       this.plantsToDisplay = plants;
       // console.log(this.plantsToDisplay);
+      this.plantsToDisplayFilter = this.plantsToDisplay;
 
       this.tabCategorie = [
         ...new Set(
           this.plantsToDisplay.map((tabCategories) => tabCategories.categorie)
         ),
       ];
-      console.log(this.tabCategorie);
+      // console.log(this.tabCategorie);
     });
+  }
+
+  // onFiltreCategorie(filtreCategorie: string[]) {
+  //   this.plantsToDisplayFilter = this.plantsToDisplayFilter.filter((e) =>
+  //     e.categorie.includes(e.categorie)
+  //   );
+  //   console.log(
+  //     'ceci est tabfliter',
+  //     this.plantsToDisplayFilter.filter((e) =>
+  //       e.categorie.includes('plantes fleuries')
+  //     )
+  //   );
+  //   console.log('ceci est le filtre', filtreCategorie);
+  // }
+
+  onFiltreCategorie(filtreCategorie: string[]) {   
+      if (this.tabCategorie.length === filtreCategorie.length) {
+        this.plantsToDisplayFilter = this.plantsToDisplay;
+      } else {
+        for (let i = 0; i < filtreCategorie.length; i++) {
+        this.plantsToDisplayFilter =
+          this.plantsToDisplay.filter((e) =>
+            e.categorie.includes(filtreCategorie[i])
+            );
+        console.log('dans le for', this.plantsToDisplayFilter);
+      }
+      }
+      
+
+    console.log('ceci est tabfliter', this.plantsToDisplayFilter);
+    console.log('ceci est le filtre', filtreCategorie);
   }
 }

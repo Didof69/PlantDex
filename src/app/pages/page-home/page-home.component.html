@@ -2,8 +2,8 @@
   <h1 class="title">Super Natural Crops and Flowers</h1>
   
   <div class="container-components mt-3">
-    <app-filter-bar class="pt-2" [tabCategorie]="tabCategorie" ></app-filter-bar>
-    <app-plant-list [plants]="plantsToDisplay"></app-plant-list>
+    <app-filter-bar class="pt-2" [tabCategorie]="tabCategorie" (newItemEvent)="onFiltreCategorie($event)"></app-filter-bar>
+    <app-plant-list [plants]="plantsToDisplayFilter"></app-plant-list>
   </div>
   
 
