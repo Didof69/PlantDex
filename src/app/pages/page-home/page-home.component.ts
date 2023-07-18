@@ -10,6 +10,7 @@ import { Plant } from 'src/app/models/plant';
 export class PageHomeComponent implements OnInit {
   plantsToDisplay: Plant[] = [];
   tabCategorie: string[] = [];
+  tabEau: number[] = [];
   plantsToDisplayFilter: Plant[] = [];
 
   constructor(private plantService: PlantService) {}
@@ -26,21 +27,41 @@ export class PageHomeComponent implements OnInit {
         ),
       ];
       // console.log(this.tabCategorie);
+
+      this.tabEau = [
+        ...new Set(this.plantsToDisplay.map((tabEaus) => tabEaus.arrosage)),
+      ];
+      // console.log(this.tabEau);
     });
   }
 
-    onFiltreCategorie(filtreCategorie: string[]) {   
-      if (this.tabCategorie.length === filtreCategorie.length) {
-        this.plantsToDisplayFilter = [...this.plantsToDisplay];
-      } else {
-        for (let i = 0; i < filtreCategorie.length; i++) {
+  onFiltreCategorie(filtreCategorie: string[]) {
+    if (this.tabCategorie.length === filtreCategorie.length) {
+      this.plantsToDisplayFilter = [...this.plantsToDisplay];
+    } else {
+      for (let i = 0; i < filtreCategorie.length; i++) {
         this.plantsToDisplayFilter = this.plantsToDisplay.filter((e) =>
           filtreCategorie.includes(e.categorie)
         );
-        }
       }
-      
+    }
+
     console.log('ceci est tabfliter', this.plantsToDisplayFilter);
     console.log('ceci est le filtre', filtreCategorie);
+  }
+
+  onFiltreEau(filtreEau: number[]) {
+    if (this.tabEau.length === filtreEau.length) {
+      this.plantsToDisplayFilter = [...this.plantsToDisplay];
+    } else {
+      for (let i = 0; i < filtreEau.length; i++) {
+        this.plantsToDisplayFilter = this.plantsToDisplay.filter((e) =>
+          filtreEau.includes(e.arrosage)
+        );
+      }
+    }
+
+    console.log('ceci est tabfliter', this.plantsToDisplayFilter);
+    console.log('ceci est le filtre', filtreEau);
   }
 }
