@@ -43,7 +43,7 @@ export class FilterBarComponent implements OnInit {
       this.categorieFiltre = [...this.tabCategorie];
     }
 
-    console.log('filtres utilisés', this.categorieFiltre);
+    console.log('filtres categories utilisés', this.categorieFiltre);
 
     this.newCaterogyEvent.emit(this.categorieFiltre);
   }
@@ -59,14 +59,12 @@ export class FilterBarComponent implements OnInit {
       if (this.eauFiltre.length === this.tabEau.length) {
         this.eauFiltre = [];
         this.eauFiltre.push(parseInt(target.value));
-        console.log(this.eauFiltre);
+        // console.log(this.eauFiltre);
       } else {
         this.eauFiltre.push(parseInt(target.value));
-        console.log(this.eauFiltre);
+        // console.log(this.eauFiltre);
       }
-    }
-
-    if (!target.checked) {
+    } else {
       if (this.eauFiltre.includes(parseInt(target.value))) {
         this.eauFiltre = this.eauFiltre.filter(
           (e) => e != parseInt(target.value)
@@ -78,10 +76,10 @@ export class FilterBarComponent implements OnInit {
     }
 
     if (this.eauFiltre.length === 0) {
-      this.eauFiltre = [...this.tabEau];
+      this.eauFiltre = [...this.tabEau.sort()];
     }
 
-    console.log('filtres utilisés', this.eauFiltre);
+    console.log('filtres eau utilisés', this.eauFiltre);
 
     this.newEauEvent.emit(this.eauFiltre);
   }

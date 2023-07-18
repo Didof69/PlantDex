@@ -3,8 +3,8 @@
     {
       "id": 952438,
       "nom": "Anthurium, pot D12cm",
-      "soleil": "moyen",
-      "arrosage": 2,
+      "soleil": "peu",
+      "arrosage": 3,
       "categorie": "plantes fleuries",
       "image": "https://images.truffaut.com/media/catalog/product/cdn:///Articles/jpg/0952000/952438_003.jpg"
     },
@@ -12,7 +12,7 @@
       "id": 77390,
       "nom": "Anthurium: Pot 17cm petit modèle - Coloris variables",
       "soleil": "moyen",
-      "arrosage": 2,
+      "arrosage": 1,
       "categorie": "plantes fleuries",
       "image": "https://images.truffaut.com/media/catalog/product/cdn:///Articles/jpg/0077000/77390_010.jpg"
     },
@@ -36,14 +36,14 @@
       "id": 910744,
       "nom": "Spathiphyllum 'Sweet Lauretta' Pot déco foncé D24cm",
       "soleil": "moyen",
-      "arrosage": 2,
+      "arrosage": 1,
       "categorie": "plantes fleuries",
       "image": "https://images.truffaut.com/media/catalog/product/cdn:///Articles/jpg/0910000/910744_001.jpg"
     },
     {
       "id": 910743,
       "nom": "Spathiphyllum 'Sweet Lauretta' Pot déco clair D24cm",
-      "soleil": "moyen",
+      "soleil": "peu",
       "arrosage": 2,
       "categorie": "plantes fleuries",
       "image": "https://images.truffaut.com/media/catalog/product/cdn:///Articles/jpg/0910000/910743_001.jpg"
@@ -52,7 +52,7 @@
       "id": 63158,
       "nom": "Spathiphyllum: d.14cm, pot grand modèle",
       "soleil": "moyen",
-      "arrosage": 2,
+      "arrosage": 3,
       "categorie": "plantes fleuries",
       "image": "https://images.truffaut.com/media/catalog/product/cdn:///Articles/jpg/0063000/63158_005.jpg"
     },
@@ -75,15 +75,15 @@
     {
       "id": 801428,
       "nom": "Strelitzia Nicolai Cache-pot Blanc : D.21-H.75",
-      "soleil": "moyen",
-      "arrosage": 2,
+      "soleil": "beaucoup",
+      "arrosage": 3,
       "categorie": "plantes fleuries",
       "image": "https://images.truffaut.com/media/catalog/product/cdn:///Articles/jpg/0801000/801428_001.jpg"
     },
     {
       "id": 832922,
       "nom": "Spathiphyllum 'Sweet Lauretta' cache-pot blanc D21cm",
-      "soleil": "moyen",
+      "soleil": "beaucoup",
       "arrosage": 2,
       "categorie": "plantes fleuries",
       "image": "https://images.truffaut.com/media/catalog/product/cdn:///Articles/jpg/0832000/832922_001.jpg"
@@ -124,7 +124,7 @@
       "id": 871531,
       "nom": "Amaryllis, mix D17cm",
       "soleil": "moyen",
-      "arrosage": 2,
+      "arrosage": 1,
       "categorie": "plantes fleuries",
       "image": "https://images.truffaut.com/media/catalog/product/cdn:///Articles/jpg/0871000/871531_002.jpg"
     },
@@ -139,7 +139,7 @@
     {
       "id": 121550,
       "nom": "Kalanchoe : 10,5cm, pot - Coloris variables",
-      "soleil": "moyen",
+      "soleil": "peu",
       "arrosage": 2,
       "categorie": "plantes fleuries",
       "image": "https://images.truffaut.com/media/catalog/product/cdn:///Articles/jpg/0121000/121550_011.jpg"
@@ -148,7 +148,7 @@
       "id": 261303,
       "nom": "Orchidée Phalaeonopsis 2 tiges - pot D.12 cm",
       "soleil": "peu",
-      "arrosage": 3,
+      "arrosage": 2,
       "categorie": "orchidés",
       "image": "https://images.truffaut.com/media/catalog/product/cdn:///Articles/jpg/0261000/261303_017.jpg"
     },
@@ -164,15 +164,15 @@
       "id": 569074,
       "nom": "Orchidée Phalaeonopsis rose en cascade 2 tiges - pot D.13 cm",
       "soleil": "peu",
-      "arrosage": 3,
+      "arrosage": 2,
       "categorie": "orchidés",
       "image": "https://images.truffaut.com/media/catalog/product/cdn:///Articles/jpg/0569000/569074_001.jpg"
     },
     {
       "id": 482795,
       "nom": "Orchidée Phalaeonopsis en arceau 2 tiges - pot D.12 cm",
-      "soleil": "peu",
-      "arrosage": 3,
+      "soleil": "moyen",
+      "arrosage": 1,
       "categorie": "orchidés",
       "image": "https://images.truffaut.com/media/catalog/product/cdn:///Articles/jpg/0482000/482795_012.jpg"
     },
@@ -203,8 +203,8 @@
     {
       "id": 953486,
       "nom": "Phalaenopsis 'Gold Las Vegas':3 tiges pot D12 cm",
-      "soleil": "peu",
-      "arrosage": 3,
+      "soleil": "moyen",
+      "arrosage": 1,
       "categorie": "orchidés",
       "image": "https://images.truffaut.com/media/catalog/product/cdn:///Articles/jpg/0953000/953486_002.jpg"
     },
@@ -252,7 +252,7 @@
       "id": 832797,
       "nom": "Sansevieria Zeylanica : pot D17 x H60cm",
       "soleil": "beaucoup",
-      "arrosage": 0,
+      "arrosage": 1,
       "categorie": "cactus et plantes grasses",
       "image": "https://images.truffaut.com/media/catalog/product/cdn:///Articles/jpg/0832000/832797_001.jpg"
     },
@@ -308,7 +308,7 @@
       "id": 832812,
       "nom": "Sanseveria cylindrica : D17xH55cm",
       "soleil": "beaucoup",
-      "arrosage": 0,
+      "arrosage": 1,
       "categorie": "cactus et plantes grasses",
       "image": "https://images.truffaut.com/media/catalog/product/cdn:///Articles/jpg/0832000/832812_001.jpg"
     },
@@ -348,7 +348,7 @@
       "id": 832798,
       "nom": "Sansevieria Zeylanica : cache- pot gris D17cm",
       "soleil": "beaucoup",
-      "arrosage": 0,
+      "arrosage": 1,
       "categorie": "cactus et plantes grasses",
       "image": "https://images.truffaut.com/media/catalog/product/cdn:///Articles/jpg/0832000/832798_001.jpg"
     },
@@ -380,7 +380,7 @@
       "id": 628683,
       "nom": "Cactus: d8.5cm - Variétés variables",
       "soleil": "beaucoup",
-      "arrosage": 0,
+      "arrosage": 1,
       "categorie": "cactus et plantes grasses",
       "image": "https://images.truffaut.com/media/catalog/product/cdn:///Articles/jpg/0628000/628683_001.jpg"
     },
@@ -451,7 +451,7 @@
     {
       "id": 832717,
       "nom": "Bonsaï d'intérieur 5 ans, pot déco orient",
-      "soleil": "moyen",
+      "soleil": "peu",
       "arrosage": 2,
       "categorie": "bonsaïs",
       "image": "https://images.truffaut.com/media/catalog/product/cdn:///Articles/jpg/0832000/832717_001.jpg"
@@ -459,7 +459,7 @@
     {
       "id": 910626,
       "nom": "Bonsaï d'extérieur avec soucoupe 7ans",
-      "soleil": "moyen",
+      "soleil": "beaucoup",
       "arrosage": 2,
       "categorie": "bonsaïs",
       "image": "https://images.truffaut.com/media/catalog/product/cdn:///Articles/jpg/0910000/910626_001.jpg"
@@ -484,7 +484,7 @@
       "id": 832726,
       "nom": "Bonsaï d'intérieur 8 ans, pot déco",
       "soleil": "moyen",
-      "arrosage": 2,
+      "arrosage": 3,
       "categorie": "bonsaïs",
       "image": "https://images.truffaut.com/media/catalog/product/cdn:///Articles/jpg/0832000/832726_001.jpg"
     },
@@ -507,7 +507,7 @@
     {
       "id": 832718,
       "nom": "Bonsaï d'intérieur 5 ans, pot déco",
-      "soleil": "moyen",
+      "soleil": "peu",
       "arrosage": 2,
       "categorie": "bonsaïs",
       "image": "https://images.truffaut.com/media/catalog/product/cdn:///Articles/jpg/0832000/832718_001.jpg"
@@ -516,7 +516,7 @@
       "id": 927584,
       "nom": "Eugenia uniflora 10/12 ans",
       "soleil": "moyen",
-      "arrosage": 2,
+      "arrosage": 3,
       "categorie": "bonsaïs",
       "image": "https://images.truffaut.com/media/catalog/product/cdn:///Articles/jpg/0927000/927584_001.jpg"
     },
@@ -555,8 +555,8 @@
     {
       "id": 828003,
       "nom": "Bonsaï Indonésien 19 ans soucoupe",
-      "soleil": "moyen",
-      "arrosage": 2,
+      "soleil": "beaucoup",
+      "arrosage": 1,
       "categorie": "bonsaïs",
       "image": "https://images.truffaut.com/media/catalog/product/cdn:///Articles/jpg/0828000/828003_001.jpg"
     },
@@ -580,7 +580,7 @@
       "id": 473733,
       "nom": "Bonsaï Buxus:5-6 ans boule",
       "soleil": "moyen",
-      "arrosage": 2,
+      "arrosage": 1,
       "categorie": "bonsaïs",
       "image": "https://images.truffaut.com/media/catalog/product/cdn:///Articles/jpg/0473000/473733_001.jpg"
     },
@@ -596,7 +596,7 @@
       "id": 910670,
       "nom": "Chamaedora (palmier nain) pot D24cm",
       "soleil": "moyen",
-      "arrosage": 2,
+      "arrosage": 1,
       "categorie": "plantes vertes",
       "image": "https://images.truffaut.com/media/catalog/product/cdn:///Articles/jpg/0910000/910670_001.jpg"
     },
@@ -611,8 +611,8 @@
     {
       "id": 910671,
       "nom": "Kentia : pot D24cm",
-      "soleil": "moyen",
-      "arrosage": 2,
+      "soleil": "peu",
+      "arrosage": 3,
       "categorie": "plantes vertes",
       "image": "https://images.truffaut.com/media/catalog/product/cdn:///Articles/jpg/0910000/910671_001.jpg"
     },
@@ -628,7 +628,7 @@
       "id": 832886,
       "nom": "Pachira Aquatica :cache- pot blanc D21cm",
       "soleil": "moyen",
-      "arrosage": 2,
+      "arrosage": 3,
       "categorie": "plantes vertes",
       "image": "https://images.truffaut.com/media/catalog/product/cdn:///Articles/jpg/0832000/832886_001.jpg"
     },
@@ -643,7 +643,7 @@
     {
       "id": 832885,
       "nom": "Pachira Aquatica :cache- pot gris D21cm",
-      "soleil": "moyen",
+      "soleil": "peu",
       "arrosage": 2,
       "categorie": "plantes vertes",
       "image": "https://images.truffaut.com/media/catalog/product/cdn:///Articles/jpg/0832000/832885_001.jpg"
@@ -684,14 +684,14 @@
       "id": 832871,
       "nom": "Ficus binnendijkii 'Alii' cache-pot blanc D21cm",
       "soleil": "moyen",
-      "arrosage": 2,
+      "arrosage": 3,
       "categorie": "plantes vertes",
       "image": "https://images.truffaut.com/media/catalog/product/cdn:///Articles/jpg/0832000/832871_001.jpg"
     },
     {
       "id": 801444,
       "nom": "Beaucarnea Recurvata Cache-pot Anthracite : D.21 - H.60",
-      "soleil": "moyen",
+      "soleil": "beaucoup",
       "arrosage": 2,
       "categorie": "plantes vertes",
       "image": "https://images.truffaut.com/media/catalog/product/cdn:///Articles/jpg/0801000/801444_002.jpg"
@@ -739,7 +739,7 @@
     {
       "id": 646556,
       "nom": "Tableau végétal gamme nature rectangle XL - 60x100cm",
-      "soleil": "moyen",
+      "soleil": "beaucoup",
       "arrosage": 2,
       "categorie": "plantes vertes",
       "image": "https://images.truffaut.com/media/catalog/product/cdn:///Articles/jpg/0646000/646556_002.jpg"
@@ -755,8 +755,8 @@
     {
       "id": 801456,
       "nom": "Beaucarnea Ramifié : D.23 - H.70",
-      "soleil": "moyen",
-      "arrosage": 2,
+      "soleil": "peu",
+      "arrosage": 3,
       "categorie": "plantes vertes",
       "image": "https://images.truffaut.com/media/catalog/product/cdn:///Articles/jpg/0801000/801456_001.jpg"
     },
@@ -779,7 +779,7 @@
     {
       "id": 801432,
       "nom": "Monstera Deliciosa - Cache-pot Anthracite : D.21 - H70",
-      "soleil": "moyen",
+      "soleil": "peu",
       "arrosage": 2,
       "categorie": "plantes vertes",
       "image": "https://images.truffaut.com/media/catalog/product/cdn:///Articles/jpg/0801000/801432_001.jpg"
@@ -819,7 +819,7 @@
     {
       "id": 910671,
       "nom": "Kentia : pot D24cm",
-      "soleil": "beaucoup",
+      "soleil": "moyen",
       "arrosage": 2,
       "categorie": "palmiers d'intérieur",
       "image": "https://images.truffaut.com/media/catalog/product/cdn:///Articles/jpg/0910000/910671_001.jpg"
@@ -828,7 +828,7 @@
       "id": 910741,
       "nom": "Rhapis : pot déco clair D24cm",
       "soleil": "beaucoup",
-      "arrosage": 2,
+      "arrosage": 3,
       "categorie": "palmiers d'intérieur",
       "image": "https://images.truffaut.com/media/catalog/product/cdn:///Articles/jpg/0910000/910741_001.jpg"
     },
@@ -851,8 +851,8 @@
     {
       "id": 801433,
       "nom": "Areca - H. 110.0 : D.21.0",
-      "soleil": "beaucoup",
-      "arrosage": 2,
+      "soleil": "moyen",
+      "arrosage": 1,
       "categorie": "palmiers d'intérieur",
       "image": "https://images.truffaut.com/media/catalog/product/cdn:///Articles/jpg/0801000/801433_001.jpg"
     },
@@ -875,8 +875,8 @@
     {
       "id": 832842,
       "nom": "Kentia : pot D19 x H80cm",
-      "soleil": "beaucoup",
-      "arrosage": 2,
+      "soleil": "moyen",
+      "arrosage": 1,
       "categorie": "palmiers d'intérieur",
       "image": "https://images.truffaut.com/media/catalog/product/cdn:///Articles/jpg/0832000/832842_001.jpg"
     },
@@ -924,14 +924,14 @@
       "id": 20893,
       "nom": "Palmier nain : H.30/40cm pot",
       "soleil": "beaucoup",
-      "arrosage": 2,
+      "arrosage": 1,
       "categorie": "palmiers d'intérieur",
       "image": "https://images.truffaut.com/media/catalog/product/cdn:///Articles/jpg/0020000/20893_007.jpg"
     },
     {
       "id": 832843,
       "nom": "Kentia : cache-pot gris D19cm",
-      "soleil": "beaucoup",
+      "soleil": "moyen",
       "arrosage": 2,
       "categorie": "palmiers d'intérieur",
       "image": "https://images.truffaut.com/media/catalog/product/cdn:///Articles/jpg/0832000/832843_001.jpg"
@@ -964,7 +964,7 @@
       "id": 910742,
       "nom": "Rhapis : pot déco foncé D24cm",
       "soleil": "beaucoup",
-      "arrosage": 2,
+      "arrosage": 1,
       "categorie": "palmiers d'intérieur",
       "image": "https://images.truffaut.com/media/catalog/product/cdn:///Articles/jpg/0910000/910742_001.jpg"
     },
@@ -980,7 +980,7 @@
       "id": 910673,
       "nom": "Rhapis : pot D24cm",
       "soleil": "beaucoup",
-      "arrosage": 2,
+      "arrosage": 3,
       "categorie": "palmiers d'intérieur",
       "image": "https://images.truffaut.com/media/catalog/product/cdn:///Articles/jpg/0910000/910673_001.jpg"
     }
