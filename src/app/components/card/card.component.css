@@ -3,3 +3,23 @@
     height: 30em;
     width: 18rem;
 }
+
+.arrosage>img {
+    height: 20px;
+    width: 20px;
+}
+
+.soleil>img {
+    width: 40px;
+    height: 40px;
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.soins{
+    justify-content: space-between;
+}

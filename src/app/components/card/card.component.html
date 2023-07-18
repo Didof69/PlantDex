@@ -1,9 +1,21 @@
 <div class="card text-center">
   <img class="card-img-top" src={{plant.image}} alt="Card image cap">
   <div class="card-body">
-    <h5 class="card-title">{{plant.nom}}</h5>
+    <h6 class="card-title">{{plant.nom}}</h6>
     <p class="card-text">{{plant.categorie}}</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <div class="soins">
+    <div class="arrosage">
+      <img *ngIf="plant.arrosage >=1 " src="../../../assets/eau-1.png" alt="goutte d'eau">
+      <img *ngIf="plant.arrosage >=3" src="../../../assets/eau-1.png" alt="goutte d'eau">
+      <img *ngIf="plant.arrosage >=2" src="../../../assets/eau-1.png" alt="goutte d'eau">
+      <img *ngIf="plant.arrosage === 0" src="../../../assets/eau-0.png" alt="goutte d'eau barrée">
+    </div>
+    <div class="soleil">
+      <img *ngIf="plant.soleil === 'peu' " src="../../../assets/soleil-peu.png" alt="nuage">
+      <img *ngIf="plant.soleil === 'moyen' " src="../../../assets/soleil-myen.png" alt="soleil derriere nuage">
+      <img *ngIf="plant.soleil === 'beaucoup' " src="../../../assets/soleil-beaucoup.png" alt="soleil">
+    </div>
+  </div>
   </div>
 </div>
 
