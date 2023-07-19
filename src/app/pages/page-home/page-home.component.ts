@@ -69,29 +69,33 @@ export class PageHomeComponent implements OnInit {
       this.saveFilterTab
     );
 
-    if (saveFilter[0].length >= 1) {
+    if (
+      saveFilter[0].length >= 1 ||
+      saveFilter[1].length >= 1 ||
+      saveFilter[2].length >= 1
+    ) {
       console.log('categoryFiltre est utilisé', saveFilter[0]);
-          this.plantsToDisplayFilter = this.plantsToDisplay
-            .filter((e) => saveFilter[0].includes(e.categorie))
-            .filter((e) => saveFilter[1].includes(e.arrosage))
-            .filter((e) => saveFilter[2].includes(e.soleil));
-    }
-
-    if (saveFilter[1].length >= 1) {
-      console.log('eauFiltre est utilisé', saveFilter[1]);
       this.plantsToDisplayFilter = this.plantsToDisplay
         .filter((e) => saveFilter[0].includes(e.categorie))
         .filter((e) => saveFilter[1].includes(e.arrosage))
         .filter((e) => saveFilter[2].includes(e.soleil));
     }
 
-    if (saveFilter[2].length >= 1) {
-      console.log('soleilFiltre est utilisé', saveFilter[2]);
-      this.plantsToDisplayFilter = this.plantsToDisplay
-        .filter((e) => saveFilter[0].includes(e.categorie))
-        .filter((e) => saveFilter[1].includes(e.arrosage))
-        .filter((e) => saveFilter[2].includes(e.soleil));
-    }
+    // if (saveFilter[1].length >= 1) {
+    //   console.log('eauFiltre est utilisé', saveFilter[1]);
+    //   this.plantsToDisplayFilter = this.plantsToDisplay
+    //     .filter((e) => saveFilter[0].includes(e.categorie))
+    //     .filter((e) => saveFilter[1].includes(e.arrosage))
+    //     .filter((e) => saveFilter[2].includes(e.soleil));
+    // }
+
+    // if (saveFilter[2].length >= 1) {
+    //   console.log('soleilFiltre est utilisé', saveFilter[2]);
+    //   this.plantsToDisplayFilter = this.plantsToDisplay
+    //     .filter((e) => saveFilter[0].includes(e.categorie))
+    //     .filter((e) => saveFilter[1].includes(e.arrosage))
+    //     .filter((e) => saveFilter[2].includes(e.soleil));
+    // }
 
     // if (
     //   saveFilter[0].length === this.tabCategorie.length &&
