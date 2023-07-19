@@ -1,42 +1,83 @@
-<div class="card" style="width: 18rem">
-
+<div class="card" style="width: 16rem">
   <div class="card-header">Filtres</div>
 
   <ul class="list-group list-group-flush">
-
     <li class="list-group-item">Catégories</li>
 
-      <div class="form-check" *ngFor="let categorie of tabCategorie">
-        <input
-          class="form-check-input"
-          type="checkbox"
-          value="{{ categorie }}"
-          id="{{ categorie }}"
-          (change)="onCheckCategory($event)"
-        />
-        <label class="form-check-label" for="{{ categorie }}">
-          {{ categorie }}
-        </label>
-      </div>
+    <div class="form-check" *ngFor="let categorie of tabCategorie">
+      <input
+        class="form-check-input"
+        type="checkbox"
+        value="{{ categorie }}"
+        id="{{ categorie }}"
+        (change)="onCheckCategory($event)"
+      />
+      <label class="form-check-label" for="{{ categorie }}">
+        {{ categorie }}
+      </label>
+    </div>
 
-      <li class="list-group-item">Gouttes d'eau</li>
+    <li class="list-group-item">Gouttes d'eau</li>
 
-      <div class="form-check" *ngFor="let arrosage of tabEau">
-        <input
-          class="form-check-input"
-          type="checkbox"
-          value="{{ arrosage }}"
-          id="{{ arrosage }}"
-          (change)="onCheckEau($event)"
+    <div class="form-check" *ngFor="let arrosage of tabEau">
+      <input
+        class="form-check-input"
+        type="checkbox"
+        value="{{ arrosage }}"
+        id="{{ arrosage }}"
+        (change)="onCheckEau($event)"
+      />
+      <label class="form-check-label" for="{{ arrosage }}">
+        <img
+          *ngIf="arrosage >= 1"
+          src="../../../assets/eau-1.png"
+          alt="goutte d'eau"
         />
-        <label class="form-check-label" for="{{ arrosage }}">
-                <img *ngIf="arrosage >=1 " src="../../../assets/eau-1.png" alt="goutte d'eau">
-      <img *ngIf="arrosage >=3" src="../../../assets/eau-1.png" alt="goutte d'eau">
-      <img *ngIf="arrosage >=2" src="../../../assets/eau-1.png" alt="goutte d'eau">
-      <img *ngIf="arrosage === 0" src="../../../assets/eau-0.png" alt="goutte d'eau barrée">
-        </label>
-      </div>
+        <img
+          *ngIf="arrosage >= 3"
+          src="../../../assets/eau-1.png"
+          alt="goutte d'eau"
+        />
+        <img
+          *ngIf="arrosage >= 2"
+          src="../../../assets/eau-1.png"
+          alt="goutte d'eau"
+        />
+        <img
+          *ngIf="arrosage === 0"
+          src="../../../assets/eau-0.png"
+          alt="goutte d'eau barrée"
+        />
+      </label>
+    </div>
 
     <li class="list-group-item">Ensoleillement</li>
+    <div class="form-check" *ngFor="let soleil of tabSoleil">
+      <input
+        class="form-check-input"
+        type="checkbox"
+        value="{{ soleil }}"
+        id="{{ soleil }}"
+        (change)="onCheckSoleil($event)"
+      />
+      <label class="form-check-label" for="{{ soleil }}">
+        <img
+          *ngIf="soleil =='peu'"
+          src="../../../assets/soleil-peu.png"
+          alt="nuage"
+        />
+        <img
+          *ngIf="soleil =='moyen'"
+          src="../../../assets/soleil-myen.png"
+          alt="soleil derriere nuage"
+        />
+        <img
+          *ngIf="soleil =='beaucoup'"
+          src="../../../assets/soleil-beaucoup.png"
+          alt="soleil"
+        />
+      </label>
+    </div>
+
   </ul>
 </div>
