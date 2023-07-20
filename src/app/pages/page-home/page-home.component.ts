@@ -15,8 +15,12 @@ export class PageHomeComponent implements OnInit {
   tabSoleil: string[] = [];
 
   plantsToDisplayFilter: Plant[] = [];
-  saveFilterTab: (number[] | string[])[] = [[], [], []];
-
+  saveFilterTab = {
+    categorie:["a"],
+    arrosage:[1],
+    soleil: ["b"],
+  };
+  
   constructor(private plantService: PlantService) {}
 
   ngOnInit() {
@@ -43,23 +47,28 @@ export class PageHomeComponent implements OnInit {
       this.tabEau.sort();
       this.tabCategorie.sort();
 
-      this.saveFilterTab = [this.tabCategorie, this.tabEau, this.tabSoleil];
-      console.log('dans oninit le saveTabFilter est ', this.saveFilterTab);
+       this.saveFilterTab = {
+         categorie: this.tabCategorie,
+         arrosage: this.tabEau,
+         soleil: this.tabSoleil,
+      };
+      
+      console.log('dans oninit l\'objet saveTabFilter est ', this.saveFilterTab);
     });
   }
 
   onFiltreCategorie(filtreCategorie: string[]) {
-    this.saveFilterTab[0] = [...filtreCategorie];
+    this.saveFilterTab.categorie = [...filtreCategorie];
     this.saveFilter(this.saveFilterTab);
   }
 
   onFiltreEau(filtreEau: number[]) {
-    this.saveFilterTab[1] = [...filtreEau];
+    this.saveFilterTab.arrosage = [...filtreEau];
     this.saveFilter(this.saveFilterTab);
   }
 
   onFiltreSoleil(filtreSoleil: string[]) {
-    this.saveFilterTab[2] = [...filtreSoleil];
+    this.saveFilterTab.soleil = [...filtreSoleil];
     this.saveFilter(this.saveFilterTab);
   }
 
@@ -70,41 +79,16 @@ export class PageHomeComponent implements OnInit {
     );
 
     if (
-      saveFilter[0].length >= 1 ||
-      saveFilter[1].length >= 1 ||
-      saveFilter[2].length >= 1
+      this.saveFilterTab.categorie.length >= 1 ||
+      this.saveFilterTab.arrosage.length >= 1 ||
+      this.saveFilterTab.soleil.length >= 1
     ) {
       console.log('categoryFiltre est utilisé', saveFilter[0]);
       this.plantsToDisplayFilter = this.plantsToDisplay
-        .filter((e) => saveFilter[0].includes(e.categorie))
-        .filter((e) => saveFilter[1].includes(e.arrosage))
-        .filter((e) => saveFilter[2].includes(e.soleil));
+        .filter((e) => this.saveFilterTab.categorie.includes(e.categorie))
+        .filter((e) => this.saveFilterTab.arrosage.includes(e.arrosage))
+        .filter((e) => this.saveFilterTab.soleil.includes(e.soleil));
     }
-
-    // if (saveFilter[1].length >= 1) {
-    //   console.log('eauFiltre est utilisé', saveFilter[1]);
-    //   this.plantsToDisplayFilter = this.plantsToDisplay
-    //     .filter((e) => saveFilter[0].includes(e.categorie))
-    //     .filter((e) => saveFilter[1].includes(e.arrosage))
-    //     .filter((e) => saveFilter[2].includes(e.soleil));
-    // }
-
-    // if (saveFilter[2].length >= 1) {
-    //   console.log('soleilFiltre est utilisé', saveFilter[2]);
-    //   this.plantsToDisplayFilter = this.plantsToDisplay
-    //     .filter((e) => saveFilter[0].includes(e.categorie))
-    //     .filter((e) => saveFilter[1].includes(e.arrosage))
-    //     .filter((e) => saveFilter[2].includes(e.soleil));
-    // }
-
-    // if (
-    //   saveFilter[0].length === this.tabCategorie.length &&
-    //   saveFilter[1].length === this.tabEau.length &&
-    //   saveFilter[2].length === this.tabSoleil.length
-    // ) {
-    //   this.plantsToDisplayFilter = [...this.plantsToDisplay];
-    //   console.log('tout s affiche');
-    // }
 
     console.log(
       'le saveTabFilter à la sortie de saveFilter()',
