@@ -16,12 +16,13 @@ export class PageHomeComponent implements OnInit {
 
   plantsToDisplayFilter: Plant[] = [];
   saveFilterTab = {
-    categorie:["a"],
-    arrosage:[1],
-    soleil: ["b"],
+    categorie: ['a'],
+    arrosage: [1],
+    soleil: ['b'],
+    valeur: 'c',
   };
-  
-  constructor(private plantService: PlantService) {}
+
+  constructor(private plantService: PlantService) { }
 
   ngOnInit() {
     this.plantService.getPlants().subscribe((plants) => {
@@ -47,13 +48,14 @@ export class PageHomeComponent implements OnInit {
       this.tabEau.sort();
       this.tabCategorie.sort();
 
-       this.saveFilterTab = {
-         categorie: this.tabCategorie,
-         arrosage: this.tabEau,
-         soleil: this.tabSoleil,
+      this.saveFilterTab = {
+        categorie: this.tabCategorie,
+        arrosage: this.tabEau,
+        soleil: this.tabSoleil,
+        valeur: '',
       };
-      
-      console.log('dans oninit l\'objet saveTabFilter est ', this.saveFilterTab);
+
+      console.log("dans oninit l'objet saveTabFilter est ", this.saveFilterTab);
     });
   }
 
@@ -72,6 +74,11 @@ export class PageHomeComponent implements OnInit {
     this.saveFilter(this.saveFilterTab);
   }
 
+  onSearchValue(value: string) {
+    this.saveFilterTab.valeur = value;
+    this.saveFilter(this.saveFilterTab);
+  }
+
   saveFilter(saveFilter: any) {
     console.log(
       "le saveTabFilter à l'entrée de saveFilter()",
@@ -81,26 +88,20 @@ export class PageHomeComponent implements OnInit {
     if (
       this.saveFilterTab.categorie.length >= 1 ||
       this.saveFilterTab.arrosage.length >= 1 ||
-      this.saveFilterTab.soleil.length >= 1
+      this.saveFilterTab.soleil.length >= 1 ||
+      this.saveFilterTab.valeur.length >=1
     ) {
-      console.log('categoryFiltre est utilisé', saveFilter[0]);
       this.plantsToDisplayFilter = this.plantsToDisplay
         .filter((e) => this.saveFilterTab.categorie.includes(e.categorie))
         .filter((e) => this.saveFilterTab.arrosage.includes(e.arrosage))
-        .filter((e) => this.saveFilterTab.soleil.includes(e.soleil));
+        .filter((e) => this.saveFilterTab.soleil.includes(e.soleil))
+        .filter((e) => e.nom.includes(this.saveFilterTab.valeur));
     }
 
-    console.log(
-      'le saveTabFilter à la sortie de saveFilter()',
-      this.saveFilterTab
-    );
+    console.log('le saveTabFilter à la sortie de saveFilter()', this.saveFilterTab);
 
-    console.log('plantes affichées', this.plantsToDisplayFilter);
-  }
-
-  onSearchValue(value: string){
-    this.plantsToDisplayFilter = this.plantsToDisplay.filter((e) =>
-      e.nom.toLowerCase().includes(value.toLowerCase())
-    );
+    // console.log('plantes affichées', this.plantsToDisplayFilter);
   }
 }
+
+
