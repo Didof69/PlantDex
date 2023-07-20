@@ -1,4 +1,5 @@
-.container-plants{
+.zone-plants {
     display: flex;
     flex-wrap: wrap;
+    /* justify-content: center; */
 }

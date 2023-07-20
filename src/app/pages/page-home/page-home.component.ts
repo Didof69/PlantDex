@@ -97,4 +97,10 @@ export class PageHomeComponent implements OnInit {
 
     console.log('plantes affichées', this.plantsToDisplayFilter);
   }
+
+  onSearchValue(value: string){
+    this.plantsToDisplayFilter = this.plantsToDisplay.filter((e) =>
+      e.nom.toLowerCase().includes(value.toLowerCase())
+    );
+  }
 }
