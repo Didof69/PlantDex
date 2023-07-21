@@ -1,0 +1,11 @@
+<div class="sort-bar">
+  <div>
+    <p>Trier par : </p>
+  </div>
+
+  <div>
+    <button #buttonAlpha type="button" class="btn btn-outline-success" value="alpha" (click)="onSortBar(buttonAlpha.value)">Alpha</button>
+    <button #buttoneEau type="button" class="btn btn-outline-success" value="eau" (click)="onSortBar(buttoneEau.value)">Arrosage</button>
+    <button #buttonSoleil type="button" class="btn btn-outline-success" value="soleil" (click)="onSortBar(buttonSoleil.value)">Ensoleillement</button>
+  </div>
+</div>

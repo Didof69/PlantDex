@@ -13,6 +13,7 @@ import { PlantListComponent } from './components/plant-list/plant-list.component
 import { CardComponent } from './components/card/card.component';
 import { FilterBarComponent } from './components/filter-bar/filter-bar.component';
 import { SearchBarComponent } from './components/search-bar/search-bar.component';
+import { SortBarComponent } from './components/sort-bar/sort-bar.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { SearchBarComponent } from './components/search-bar/search-bar.component
     PlantListComponent,
     CardComponent,
     FilterBarComponent,
-    SearchBarComponent
+    SearchBarComponent,
+    SortBarComponent,
   ],
 
   imports: [
