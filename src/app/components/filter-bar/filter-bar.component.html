@@ -28,26 +28,24 @@
         (change)="onCheckEau($event)"
       />
       <label class="form-check-label" for="{{ arrosage }}">
-        <img
-          *ngIf="arrosage >= 1"
-          src="../../../assets/eau-1.png"
-          alt="goutte d'eau"
-        />
-        <img
-          *ngIf="arrosage >= 3"
-          src="../../../assets/eau-1.png"
-          alt="goutte d'eau"
-        />
-        <img
-          *ngIf="arrosage >= 2"
-          src="../../../assets/eau-1.png"
-          alt="goutte d'eau"
-        />
-        <img
-          *ngIf="arrosage === 0"
-          src="../../../assets/eau-0.png"
-          alt="goutte d'eau barrée"
-        />
+        <div *ngIf="arrosage == 0">
+          <i class="fi fi-rs-humidity"></i>
+        </div>
+
+        <div *ngIf="arrosage == 1">
+          <i class="fi fi-ss-humidity" style="color: rgb(78, 190, 201)"></i>
+        </div>
+
+        <div *ngIf="arrosage == 2">
+          <i class="fi fi-ss-humidity" style="color: rgb(78, 190, 201)"></i>
+          <i class="fi fi-ss-humidity" style="color: rgb(78, 190, 201)"></i>
+        </div>
+
+        <div *ngIf="arrosage == 3">
+          <i class="fi fi-ss-humidity" style="color: rgb(78, 190, 201)"></i>
+          <i class="fi fi-ss-humidity" style="color: rgb(78, 190, 201)"></i>
+          <i class="fi fi-ss-humidity" style="color: rgb(78, 190, 201)"></i>
+        </div>
       </label>
     </div>
 
@@ -61,23 +59,24 @@
         (change)="onCheckSoleil($event)"
       />
       <label class="form-check-label" for="{{ soleil }}">
-        <img
-          *ngIf="soleil =='peu'"
-          src="../../../assets/soleil-peu.png"
-          alt="nuage"
-        />
-        <img
-          *ngIf="soleil =='moyen'"
-          src="../../../assets/soleil-myen.png"
-          alt="soleil derriere nuage"
-        />
-        <img
-          *ngIf="soleil =='beaucoup'"
-          src="../../../assets/soleil-beaucoup.png"
-          alt="soleil"
-        />
+        <div *ngIf="soleil == 'peu'">
+          <i class="fi fi-sr-brightness" style="color: rgb(255, 204, 0)"></i>
+          <i class="fi fi-sr-brightness"></i>
+          <i class="fi fi-sr-brightness"></i>
+        </div>
+
+        <div *ngIf="soleil == 'moyen'">
+          <i class="fi fi-sr-brightness" style="color: rgb(255, 204, 0)"></i>
+          <i class="fi fi-sr-brightness" style="color: rgb(255, 204, 0)"></i>
+          <i class="fi fi-sr-brightness"></i>
+        </div>
+
+        <div *ngIf="soleil == 'beaucoup'">
+          <i class="fi fi-sr-brightness" style="color: rgb(255, 204, 0)"></i>
+          <i class="fi fi-sr-brightness" style="color: rgb(255, 204, 0)"></i>
+          <i class="fi fi-sr-brightness" style="color: rgb(255, 204, 0)"></i>
+        </div>
       </label>
     </div>
-
   </ul>
 </div>

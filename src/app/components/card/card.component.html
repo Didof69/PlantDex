@@ -9,47 +9,15 @@
     <p class="card-text">{{ plant.categorie }}</p>
 
     <div class="soins">
-      <div class="arrosage">
-        <img
-          *ngIf="plant.arrosage >= 1"
-          src="../../../assets/eau-1.png"
-          alt="goutte d'eau"
-        />
-        <img
-          *ngIf="plant.arrosage >= 3"
-          src="../../../assets/eau-1.png"
-          alt="goutte d'eau"
-        />
-        <img
-          *ngIf="plant.arrosage >= 2"
-          src="../../../assets/eau-1.png"
-          alt="goutte d'eau"
-        />
-        <img
-          *ngIf="plant.arrosage === 0"
-          src="../../../assets/eau-0.png"
-          alt="goutte d'eau barrée"
-        />
+
+      <div class="eau">
+      <app-water [waterValue]="waterValue"></app-water>
       </div>
 
       <div class="soleil">
-        <img
-          *ngIf="plant.soleil === 'peu'"
-          src="../../../assets/soleil-peu.png"
-          alt="nuage"
-        />
-        <img
-          *ngIf="plant.soleil === 'moyen'"
-          src="../../../assets/soleil-myen.png"
-          alt="soleil derriere nuage"
-        />
-        <img
-          *ngIf="plant.soleil === 'beaucoup'"
-          src="../../../assets/soleil-beaucoup.png"
-          alt="soleil"
-        />
+       <app-sun [sunValue]="sunValue"></app-sun>
       </div>
-      
+
     </div>
   </div>
 </div>

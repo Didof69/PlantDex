@@ -8,4 +8,11 @@ import { Plant } from 'src/app/models/plant';
 })
 export class CardComponent {
   @Input() plant!: Plant;
+  waterValue!: number;
+  sunValue!: string;
+
+  ngOnInit() {
+    this.waterValue = this.plant.arrosage;
+    this.sunValue = this.plant.soleil;
+  }
 }

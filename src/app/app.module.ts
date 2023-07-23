@@ -15,6 +15,8 @@ import { FilterBarComponent } from './components/filter-bar/filter-bar.component
 import { SearchBarComponent } from './components/search-bar/search-bar.component';
 import { SortBarComponent } from './components/sort-bar/sort-bar.component';
 import { HeartComponent } from './icones/heart/heart.component';
+import { WaterComponent } from './icones/water/water.component';
+import { SunComponent } from './icones/sun/sun.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +32,8 @@ import { HeartComponent } from './icones/heart/heart.component';
     SearchBarComponent,
     SortBarComponent,
     HeartComponent,
+    WaterComponent,
+    SunComponent,
   ],
 
   imports: [
