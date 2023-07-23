@@ -4,8 +4,8 @@
   </div>
 
   <div>
-    <button #buttonAlpha type="button" class="btn btn-outline-success" value="alpha" (click)="onSortBar(buttonAlpha.value)">Alpha</button>
-    <button #buttoneEau type="button" class="btn btn-outline-success" value="eau" (click)="onSortBar(buttoneEau.value)">Arrosage</button>
-    <button #buttonSoleil type="button" class="btn btn-outline-success" value="soleil" (click)="onSortBar(buttonSoleil.value)">Ensoleillement</button>
+    <button id="buttonAlpha" type="button" class="btn btn-outline-success" value="alpha" (click)="this.newSortEvent.emit($event)">Alpha</button>
+    <button id="buttoneEau" type="button" class="btn btn-outline-success" value="eau" (click)="this.newSortEvent.emit($event)">Arrosage</button>
+    <button id="buttonSoleil" type="button" class="btn btn-outline-success" value="soleil" (click)="this.newSortEvent.emit($event)">Ensoleillement</button>
   </div>
 </div>

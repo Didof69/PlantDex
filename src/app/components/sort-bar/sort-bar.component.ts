@@ -6,9 +6,6 @@ import { Component, EventEmitter, Output } from '@angular/core';
   styleUrls: ['./sort-bar.component.css']
 })
 export class SortBarComponent {
-  @Output() newSortEvent = new EventEmitter<string>();
+  @Output() newSortEvent = new EventEmitter();
 
-  onSortBar(value:string) {
-    this.newSortEvent.emit(value);
-  };
 }
