@@ -7,7 +7,7 @@
 
     <div class="m-1">
     <app-search-bar (searchFilter)="onSearchValue($event)"></app-search-bar>
-    <app-sort-bar (newSortEvent)="onSortValue($event)"></app-sort-bar>
+    <app-sort-bar (newSortEvent)="onSortValue($event)" [compteurValue]="compteurValue"></app-sort-bar>
     <app-plant-list [plants]="plantsToDisplayFilter"></app-plant-list>
     </div>
 

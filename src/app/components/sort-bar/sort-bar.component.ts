@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-sort-bar',
@@ -7,5 +7,5 @@ import { Component, EventEmitter, Output } from '@angular/core';
 })
 export class SortBarComponent {
   @Output() newSortEvent = new EventEmitter();
-
+  @Input() compteurValue!: string;
 }

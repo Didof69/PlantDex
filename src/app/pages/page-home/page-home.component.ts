@@ -26,6 +26,7 @@ export class PageHomeComponent implements OnInit {
   compteurCategorie: number = 0;
   compteurEau: number = 0;
   compteurSoleil: number = 0;
+  compteurValue!: string;
 
   constructor(private plantService: PlantService) {}
 
@@ -158,33 +159,41 @@ export class PageHomeComponent implements OnInit {
     if (target.value == 'alpha') {
       // console.log('a', this.compteurCategorie);
       this.compteurCategorie += 1;
+      this.compteurValue = `alpha${this.compteurCategorie}`;
 
       if (this.compteurCategorie <= 2) {
         this.compteurEau = 0;
         this.compteurSoleil = 0;
       } else {
         this.compteurCategorie = 0;
+        this.compteurValue = ''
       }
       // console.log('a', this.compteurCategorie);
     }
 
     if (target.value == 'eau') {
       this.compteurEau += 1;
+      this.compteurValue = `eau${this.compteurEau}`;
+
       if (this.compteurEau <= 2) {
         this.compteurCategorie = 0;
         this.compteurSoleil = 0;
       } else {
         this.compteurEau = 0;
+        this.compteurValue = '';
       }
     }
 
     if (target.value == 'soleil') {
       this.compteurSoleil += 1;
+      this.compteurValue = `soleil${this.compteurSoleil}`;
+
       if (this.compteurSoleil <= 2) {
         this.compteurEau = 0;
         this.compteurCategorie = 0;
       } else {
         this.compteurSoleil = 0;
+        this.compteurValue = '';
       }
     }
 

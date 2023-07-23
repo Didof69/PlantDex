@@ -14,12 +14,12 @@
     height: 40px;
 }
 
-.card-body{
+.card-body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.soins{
+.soins {
     justify-content: space-between;
 }

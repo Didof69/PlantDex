@@ -14,6 +14,7 @@ import { CardComponent } from './components/card/card.component';
 import { FilterBarComponent } from './components/filter-bar/filter-bar.component';
 import { SearchBarComponent } from './components/search-bar/search-bar.component';
 import { SortBarComponent } from './components/sort-bar/sort-bar.component';
+import { HeartComponent } from './icones/heart/heart.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { SortBarComponent } from './components/sort-bar/sort-bar.component';
     FilterBarComponent,
     SearchBarComponent,
     SortBarComponent,
+    HeartComponent,
   ],
 
   imports: [

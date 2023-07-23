@@ -1,11 +1,43 @@
 <div class="sort-bar">
   <div>
-    <p>Trier par : </p>
+    <p>Trier par :</p>
   </div>
 
   <div>
-    <button id="buttonAlpha" type="button" class="btn btn-outline-success" value="alpha" (click)="this.newSortEvent.emit($event)">Alpha</button>
-    <button id="buttoneEau" type="button" class="btn btn-outline-success" value="eau" (click)="this.newSortEvent.emit($event)">Arrosage</button>
-    <button id="buttonSoleil" type="button" class="btn btn-outline-success" value="soleil" (click)="this.newSortEvent.emit($event)">Ensoleillement</button>
+    <button
+      id="buttonAlpha"
+      type="button"
+      class="btn btn-outline-success"
+      value="alpha"
+      (click)="this.newSortEvent.emit($event)"
+    >
+      Alpha
+      <i class="fi fi-rs-arrow-down" *ngIf="compteurValue == 'alpha1'"></i>
+      <i class="fi fi-rs-arrow-up" *ngIf="compteurValue == 'alpha2'"></i>
+    </button>
+
+    <button
+      id="buttoneEau"
+      type="button"
+      class="btn btn-outline-success"
+      value="eau"
+      (click)="this.newSortEvent.emit($event)"
+    >
+      Arrosage
+      <i class="fi fi-rs-arrow-down" *ngIf="compteurValue == 'eau1'"></i>
+      <i class="fi fi-rs-arrow-up" *ngIf="compteurValue == 'eau2'"></i>
+    </button>
+    
+    <button
+      id="buttonSoleil"
+      type="button"
+      class="btn btn-outline-success"
+      value="soleil"
+      (click)="this.newSortEvent.emit($event)"
+    >
+      Ensoleillement
+      <i class="fi fi-rs-arrow-down" *ngIf="compteurValue == 'soleil1'"></i>
+      <i class="fi fi-rs-arrow-up" *ngIf="compteurValue == 'soleil2'"></i>
+    </button>
   </div>
 </div>
