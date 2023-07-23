@@ -1,3 +1,7 @@
-.container-components{
+.container-components {
     display: flex;
+}
+
+h1 {
+    color: rgba(0, 112, 62, 0.93);
 }

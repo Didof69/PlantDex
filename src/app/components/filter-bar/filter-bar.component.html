@@ -1,8 +1,8 @@
-<div class="card" style="width: 16rem">
-  <div class="card-header">Filtres</div>
+<div class="card pb-2" style="width: 16rem">
+  <div class="card-header" style="background-color: rgba(0, 112, 62, 0.115)">Filtres</div>
 
   <ul class="list-group list-group-flush">
-    <li class="list-group-item">Catégories</li>
+    <li class="list-group-item mb-2">Catégories</li>
 
     <div class="form-check" *ngFor="let categorie of tabCategorie">
       <input
@@ -17,7 +17,7 @@
       </label>
     </div>
 
-    <li class="list-group-item">Gouttes d'eau</li>
+    <li class="list-group-item border mt-2 mb-2">Arrosage</li>
 
     <div class="form-check" *ngFor="let arrosage of tabEau">
       <input
@@ -49,7 +49,7 @@
       </label>
     </div>
 
-    <li class="list-group-item">Ensoleillement</li>
+    <li class="list-group-item border mt-2 mb-2">Ensoleillement</li>
     <div class="form-check" *ngFor="let soleil of tabSoleil">
       <input
         class="form-check-input"
