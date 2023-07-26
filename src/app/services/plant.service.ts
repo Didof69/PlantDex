@@ -4,14 +4,17 @@ import { Observable } from 'rxjs';
 import { Plant } from '../models/plant';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
-  
 export class PlantService {
+  plant!: Plant;
+  constructor(private http: HttpClient) {}
 
-  constructor(private http: HttpClient) { }
+  getPlants(): Observable<Plant[]> {
+    return this.http.get<Plant[]>('http://localhost:3000/plants');
+  }
 
-  getPlants(): Observable<Plant[]>{
-    return this.http.get<Plant[]>('http://localhost:3000/plants')
+  getPlantsById(plantId: number): Observable<Plant> {
+    return this.http.get<Plant>(`http://localhost:3000/plants/${plantId}`);
   }
 }

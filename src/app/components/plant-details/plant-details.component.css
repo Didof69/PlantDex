@@ -1,0 +1,26 @@
+img {
+    width: 80%;
+}
+
+.en-tete {
+    padding: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    vertical-align: center;
+}
+
+.soins{
+    display: flex;
+    vertical-align: center;
+    justify-content: space-between;
+}
+
+.zone-card{
+    display: flex;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}

@@ -26,14 +26,14 @@
 .link_404 {
     color: #fff !important;
     padding: 10px 20px;
-    background: #39ac31;
+    background: rgba(0, 112, 62, 0.93);
     margin: 20px 0;
     display: inline-block;
     text-decoration: none;
 }
 
-.link_404:hover{
-    background-color: chartreuse;
+.link_404:hover {
+    background-color: rgba(0, 112, 62, 0.6);
 }
 
 .contant_box_404 {

@@ -1,0 +1,41 @@
+<div class="container py-5">
+  <div class="row justify-content-center">
+    <div class="card" style="width: 40rem;">
+      <div class="zone-card">
+        <div class="en-tete">          
+          <app-heart></app-heart>
+              
+            <img
+            class="card-img-top"
+            src="{{ plant.image }}"
+            alt="Card image cap"
+          />
+
+        </div>
+
+        <div class="card-body text-center info">
+          <div>
+            <h5 class="card-title">{{ plant.nom }}</h5>
+            <h6>id# {{ plant.id }}</h6>
+          </div>
+
+          <div class="card-text">
+            <p>Catégorie : {{ plant.categorie }}</p>
+          </div>
+
+          <div class="zone-soins">
+            <div class="soins">
+              <span>Arrosage : </span>
+              <app-water [waterValue]="waterValue"></app-water>
+            </div>
+            <div class="soins">
+                 <span>Ensoleillement : </span>
+              <app-sun [sunValue]="sunValue"></app-sun>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

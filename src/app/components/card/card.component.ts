@@ -15,4 +15,5 @@ export class CardComponent {
     this.waterValue = this.plant.arrosage;
     this.sunValue = this.plant.soleil;
   }
+  
 }
